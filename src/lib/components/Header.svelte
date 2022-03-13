@@ -33,7 +33,7 @@
 			aria-expanded="false"
 			data-target="basicnavbar"
 		>
-			<i class="far fa-user-circle" />
+			<i class="fa fa-user-circle" />
 		</a>
 	</div>
 
@@ -58,7 +58,7 @@
 			{#if isLoggedIn}
 				<div class="navbar-item has-dropdown is-hoverable">
 					<!-- svelte-ignore a11y-missing-attribute -->
-					<a id="me" class="navbar-link is-arrowless"> <i class="far fa-user-circle" /> </a>
+					<a id="me" class="navbar-link is-arrowless"> <i class="fa fa-user-circle" /> </a>
 					<div class="navbar-dropdown is-right">
 						<a class="navbar-item" href="/profile"> Mijn Profiel </a>
 						<a class="navbar-item" href="/feedback"> Feedback </a>
@@ -75,16 +75,20 @@
 </nav>
 
 <style>
+	.navbar {
+		background: #071217;
+	}
+
 	#appname {
 		color: white;
 		font-weight: 700;
 	}
 
-	i.far {
+	i.fa {
 		font-size: 23px;
 	}
 
-	#menu i.far {
+	#menu i.fa {
 		position: absolute;
 		top: 50%;
 		left: 50%;

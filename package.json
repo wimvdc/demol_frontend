@@ -36,6 +36,7 @@
     "@fontsource/fira-mono": "^4.5.0",
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1",
+    "font-awesome": "^4.7.0",
     "passport-google-oauth20": "^2.0.0",
     "sveltekit-passport-oauth2": "^0.0.6"
   }
