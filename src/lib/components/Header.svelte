@@ -40,16 +40,16 @@
 	<div id="basicnavbar" class="navbar-menu">
 		<div class="navbar-start">
 			{#if isLoggedIn}
-				<a class="navbar-item" href="/endgame"> Mollen </a>
+				<a class="navbar-item" href="/game"> Mollen </a>
 				<a class="navbar-item" href="/group"> Groepen </a>
-				<div class="navbar-item has-dropdown is-hoverable">
-					<!-- svelte-ignore a11y-missing-attribute -->
-					<a class="navbar-link"> Statistieken </a>
+				<!--div class="navbar-item has-dropdown is-hoverable"-->
+				<!-- svelte-ignore a11y-missing-attribute -->
+				<!--a class="navbar-link"> Statistieken </a>
 					<div class="navbar-dropdown">
 						<a class="navbar-item" href="/insight/me"> Mijn inzet </a>
 						<a class="navbar-item" href="/insight"> Iedereen zijn inzet </a>
 					</div>
-				</div>
+				</div-->
 			{/if}
 			<a class="navbar-item" href="/info"> Info </a>
 		</div>

@@ -1,5 +1,5 @@
 export const baseUrl = `${import.meta.env.VITE_PUBLIC_API_BASE_URL}`;
-console.log(`baseUrl: ${baseUrl}`);
+
 export const getData = async (url) => {
 	const response = await fetch(`${baseUrl}${url}`, { credentials: 'include' });
 	if (!response.ok) {
