@@ -58,10 +58,10 @@
 			{#if isLoggedIn}
 				<div class="navbar-item has-dropdown is-hoverable">
 					<!-- svelte-ignore a11y-missing-attribute -->
-					<a id="me" class="navbar-link is-arrowless"> <i class="fa fa-user-circle" /> </a>
+					<a id="me" class="navbar-link is-arrowless"> <i class="fa-solid fa-user" /> </a>
 					<div class="navbar-dropdown is-right">
 						<a class="navbar-item" href="/profile"> Mijn Profiel </a>
-						<a class="navbar-item" href="/feedback"> Feedback </a>
+						<!--a class="navbar-item" href="/feedback"> Feedback </a-->
 						<a class="navbar-item" href="{baseUrl}/auth/v1/logout"> Uitloggen </a>
 					</div>
 				</div>
@@ -74,7 +74,7 @@
 	</div>
 </nav>
 
-<style>
+<style lang="scss">
 	.navbar {
 		background: #071217;
 	}
@@ -93,6 +93,14 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+	}
+
+	a.navbar-item,
+	i.fa-user {
+		color: #babcc0;
+		&:hover {
+			color: black;
+		}
 	}
 
 	@media screen and (max-width: 1024px) {

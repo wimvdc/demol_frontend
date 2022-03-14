@@ -36,14 +36,14 @@
 				Delen via:
 				<a
 					href="https://api.whatsapp.com/send?text={encodeURIComponent(detail.share)}"
-					target="_blank"><i class="fab fa-whatsapp" /></a
+					target="_blank"><i class="fa-brands fa-whatsapp" /></a
 				>
 				of
 				<a
 					href="fb-messenger://share/?link={encodeURIComponent(
 						detail.share
 					)}&app_id=3669933689733011"
-					target="_blank"><i class="fab fa-facebook-messenger" /></a
+					target="_blank"><i class="fa-brands fa-facebook-messenger" /></a
 				>
 			</div>
 		</div>
@@ -64,9 +64,13 @@
 
 	#social {
 		margin-top: 10px;
-		i {
-			margin: 0 6px;
-			font-size: 22px;
+		a {
+			text-decoration: none;
+			i {
+				margin: 0 6px;
+				font-size: 22px;
+				font-style: normal;
+			}
 		}
 	}
 </style>

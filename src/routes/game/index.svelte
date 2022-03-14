@@ -108,7 +108,7 @@
 	}
 	.name {
 		background-color: black;
-		width: 55%;
+		width: 65%;
 		margin: 0 auto;
 		color: white;
 		height: 50px;

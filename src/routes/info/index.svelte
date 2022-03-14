@@ -88,12 +88,6 @@
 				rel="noopener"
 				class="button is-link is-outlined">Online afleveringen</a
 			>
-			<a
-				href="https://github.com/wimvdc/DeMol-front"
-				target="_blank"
-				rel="noopener"
-				class="button is-link is-outlined"><i class="fab fa-github" /> Source code</a
-			>
 		</p>
 	</section>
 </div>

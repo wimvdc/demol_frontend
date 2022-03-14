@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-node": "^1.0.0-next.71",
     "@sveltejs/kit": "next",
     "@types/cookie": "^0.4.1",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
@@ -34,9 +35,9 @@
   "type": "module",
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.0",
+    "@fortawesome/fontawesome-free": "^6.0.0",
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1",
-    "font-awesome": "^4.7.0",
     "passport-google-oauth20": "^2.0.0",
     "sveltekit-passport-oauth2": "^0.0.6"
   }

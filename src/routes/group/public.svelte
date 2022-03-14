@@ -34,7 +34,7 @@
 	<section>
 		<div class="notification is-link is-light">
 			Wil je niet in deze lijst staan?<br />
-			Pas dan de instellingen in je <a href="#/profile">profiel</a> aan.
+			Pas dan de instellingen in je <a href="/profile">profiel</a> aan.
 		</div>
 	</section>
 </div>

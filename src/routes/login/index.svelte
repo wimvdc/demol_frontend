@@ -6,12 +6,12 @@
 	<div class="has-text-centered">
 		<div class="row">
 			<a href="{baseUrl}/auth/v1/google" class="btn-google"
-				><i class="fab fa-google" />Inloggen met Google</a
+				><i class="fa fa-google" />Inloggen met Google</a
 			>
 		</div>
 		<div class="row">
 			<a href="{baseUrl}/auth/v1/facebook" class="btn-facebook"
-				><i class="fab fa-facebook-f" />Inloggen met Facebook</a
+				><i class="fa fa-facebook-f" />Inloggen met Facebook</a
 			>
 		</div>
 	</div>
@@ -67,7 +67,7 @@
 		}
 	}
 
-	i.fab {
+	i.fa {
 		padding-right: 10px;
 	}
 </style>
