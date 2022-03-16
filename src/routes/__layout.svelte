@@ -1,3 +1,27 @@
+<script context="module" lang="ts">
+	import { browser } from '$app/env';
+
+	export const ssr = false;
+	export const prerender = false;
+
+	import { authGuard } from '$lib/guards';
+	import type { LoadInput, LoadOutput } from '@sveltejs/kit/types.internal';
+
+	export async function load({
+		url,
+		params,
+		fetch,
+		session,
+		context
+	}: LoadInput): Promise<LoadOutput> {
+		if (browser) {
+			return await authGuard({ url, params, fetch, session, context });
+		} else {
+			return {};
+		}
+	}
+</script>
+
 <script lang="ts">
 	import Header from '$lib/components/Header.svelte';
 	import '../app.css';
