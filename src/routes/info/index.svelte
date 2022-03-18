@@ -8,7 +8,7 @@
 		<ul>
 			<li>Iedereen start met 5 punten</li>
 			<li>
-				Na iedere aflevering, vanaf 21u45, kan je punten inzetten op één of meedere kandidaten
+				Na iedere aflevering, vanaf 22u00, kan je punten inzetten op één of meedere kandidaten
 			</li>
 			<li>
 				Na iedere aflevering worden de punten verdubbeld. Tenzij je die had ingezet op de

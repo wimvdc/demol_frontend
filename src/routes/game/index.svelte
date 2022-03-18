@@ -3,51 +3,42 @@
 	import { getData, postData, preCandidates } from '$lib/utils';
 
 	let candidates = preCandidates;
-	let startPoints = 0;
-	let voteopen = true;
-	let availablePoints = startPoints;
+	let voteopen = false;
 	let result = 0;
+	let selected = { uuid: '' };
 
 	onMount(async () => {
-		const result = await Promise.allSettled([getData('/v1/game/info'), getData('/v1/candidates')]);
-		if (result[0].value.endgameopen) {
-			replace('/endgame');
-		}
+		const result = await Promise.allSettled([
+			getData('/v1/game/info'),
+			getData('/v1/candidates'),
+			getData('/v1/game/mol')
+		]);
 		voteopen = result[0].value.voteopen;
-		startPoints = result[0].value.spendable;
 		candidates = result[1].value;
-		availablePoints = startPoints - pointCount();
+		console.log(result[2].value);
+		selected = result[2].value ? result[2].value : selected;
 	});
 
-	async function save() {
+	async function save(myMol) {
+		result = 0;
 		try {
-			if (startPoints < pointCount()) result = 2;
-			else {
-				let guess = candidates.filter((mol) => Number(mol.points) != 0);
-				await postData('/v1/game/mol', guess);
+			if (voteopen) {
+				selected = myMol;
+				await postData('/v1/game/mol', { mol: myMol.uuid });
 				result = 1;
+				setTimeout(() => (result = 0), 1600);
 			}
 		} catch (error) {
 			result = 3;
 			console.log(error);
 		}
-		candidates = await getData('/v1/candidates');
-	}
-
-	function pointCount() {
-		return candidates.reduce((acc, item) => acc + (item.points >= 0 ? item.points : 0), 0);
-	}
-
-	function pointsChanged(e) {
-		let currentPoints = candidates.reduce((acc, item) => acc + item.points, 0);
-		availablePoints = startPoints - currentPoints;
+		selected = await getData('/v1/game/mol');
 	}
 </script>
 
 <div class="has-text-centered">
 	{#if voteopen}
-		<h4 class="title is-4">Beschikbare punten: {availablePoints}</h4>
-		<button class="button is-success" on:click={save}>Opslaan</button>
+		<h1 class="title is-2">Wie is De Mol?</h1>
 	{:else}
 		<h3 class="title is-3">Het stemmen voor deze ronde is afgelopen!</h3>
 		<span />
@@ -56,14 +47,7 @@
 
 <div id="messages">
 	{#if result == 1}
-		<div class="notification is-success">Je wijzigingen werden opgeslagen 👌</div>
-	{/if}
-
-	{#if result == 2}
-		<div class="notification is-danger">
-			Oei, je hebt te veel punten uitgedeeld! 😰 <br />
-			Je kunt deze ronde maar <b>{startPoints}</b> punten verdelen.
-		</div>
+		<div class="notification is-success">Je selectie werd opgeslagen 👌</div>
 	{/if}
 
 	{#if result == 3}
@@ -75,69 +59,44 @@
 </div>
 
 <div class="columns is-mobile is-flex-wrap-wrap">
-	{#each candidates as item, i}
-		<div class="column is-6-touch is-3-desktop has-text-centered">
-			<div class="candidate" class:out={item.isOut}>
-				<img src="/kandidaten/{item.name.toLowerCase()}.jpg" alt="Foto van {item.name}" />
-				<div class="name">
-					<h1 class="mol">
-						{voteopen ? item.name : item.name + (item.points ? ': ' + item.points : '')}
-					</h1>
-					{#if !item.isOut && voteopen}
-						<input type="number" min="0" bind:value={item.points} on:change={pointsChanged} />
-					{/if}
-				</div>
+	{#each candidates as item}
+		<div class="column is-6-touch is-4-desktop has-text-centered">
+			<div class="candidate">
+				<img
+					src="/kandidaten/{item.name.toLowerCase()}.jpg"
+					alt="Foto van {item.name}"
+					class:mol={selected.uuid === item.uuid}
+					on:click={() => save(item)}
+				/>
 			</div>
 		</div>
 	{/each}
 </div>
 
-<style>
-	h1.mol {
-		font-size: 1.5rem;
-	}
-	input[type='number'] {
-		width: 60px;
-		margin-top: 15px;
-		font-size: 16px;
-	}
+<style lang="scss">
 	img {
 		border-radius: 50%;
 		margin-bottom: -30px;
-		border: 5px solid transparent;
-	}
-	.name {
-		background-color: black;
-		width: 65%;
-		margin: 0 auto;
-		color: white;
-		height: 50px;
-		line-height: calc(50px - 10px);
-		border-radius: 50px;
-		position: relative;
-		border: 5px solid transparent;
-	}
-	.out {
-		opacity: 0.25;
+		border: 9px solid transparent;
+		opacity: 0.8;
+		&.mol {
+			border: 9px solid green;
+			opacity: 1;
+		}
+		&:hover {
+			cursor: pointer;
+		}
 	}
 
 	h1 {
-		font-weight: 600;
+		margin-bottom: 30px;
 	}
+
 	.column {
-		margin-bottom: 3em;
+		margin-bottom: 2em;
 	}
 
 	#messages .notification {
 		margin: 12px 0;
-	}
-
-	@media only screen and (max-width: 600px) {
-		.name {
-			width: 100%;
-		}
-		h1.mol {
-			font-size: 1.25rem;
-		}
 	}
 </style>

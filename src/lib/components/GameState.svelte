@@ -14,7 +14,7 @@
 	</div>
 {:else if voteopen === false && !finished}
 	<div>
-		Je kan deze ronde niet meer stemmen. Vanaf 21u30 start de volgende ronde en kan je weer punten
+		Je kan deze ronde niet meer stemmen. Vanaf 22u00 start de volgende ronde en kan je weer punten
 		inzetten.
 	</div>
 {:else if spendable - spend <= 0}

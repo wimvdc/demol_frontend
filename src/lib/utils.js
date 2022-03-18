@@ -10,6 +10,9 @@ export const getData = async (url) => {
 			throw new Error(message);
 		}
 	}
+	if (response.status === 204) {
+		return null;
+	}
 	return await response.json();
 };
 
