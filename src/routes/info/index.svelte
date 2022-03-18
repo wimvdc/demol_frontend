@@ -6,25 +6,20 @@
 	<section class="section">
 		<h1 class="title"><span>Hoe werkt het?</span></h1>
 		<ul>
-			<li>Iedereen start met 5 punten</li>
+			<li>Na iedere aflevering, vanaf 22u00, kan je stemmen.</li>
+			<li>Zit je verdachte na de aflevering nog in het spel? Dan score je punten!</li>
 			<li>
-				Na iedere aflevering, vanaf 22u00, kan je punten inzetten op één of meedere kandidaten
+				Punten worden op volgende manier berekend: 1 punten maal het aflevering nummer. <br />
+				Voorbeeld: 1 punt voor het eerste aflevering, 2 voor het tweede aflevering, etc. <br />Ligt
+				je verdachte er toch onverwachts uit? Geen probleem, dan krijg je geen punten deze ronde
+				maar kan je gewoon terug stemmen voor de volgende ronde!
 			</li>
-			<li>
-				Na iedere aflevering worden de punten verdubbeld. Tenzij je die had ingezet op de
-				afvaller(s), die punten ben je voorgoed kwijt!
-			</li>
-			<li>Na elke aflevering krijg je sowieso 3 gratis punten</li>
-			<li>
-				Formule: ( punten ingezet op de niet-afvaller(s) * 2) + gratis punten per ronde ( = 3 ) +
-				niet ingezette punten - punten ingezet op de afvaller
-			</li>
-			<li>
+			<!--li>
 				Tijdens de laatste ronde moet je enkel jouw Mol kiezen. Na de bekendmaking van De Mol krijg
 				je 100 punten bij een juiste gok. Daarna gebeurd de finale scoreberekening op basis van
 				volgende logica: de punten die je doorheen alle voorgaande rondes hebt ingezet op De Mol
 				worden bij je aantal punten na ronde 6 opgeteld.
-			</li>
+			</li-->
 			<li>
 				Na de bekendmaking van de Mol zullen de definitieve scores worden berekend. Je krijgt voor
 				iedere keer dat je de mol juist hebt aangeduid, extra punten.
@@ -35,10 +30,13 @@
 		<h1 class="title"><span>Groepen</span></h1>
 		Je kan samen met je vrienden, familie, collega's ... spelen in 1 of meerdere groepen. Je kan zelf
 		een groep aanmaken en je vrienden uitnodigen. Na iedere aflevering kan je zien hoeveel punten ze
-		gescoord hebben. Als de Mol eenmaal bekend gemaakt is, zul je ook te zien krijgen wie je vrienden
-		verdacht hebben doorheen het spel.
-		<br />De groepen zijn <strong>niet</strong> publiek, je moet dus zelf een groep maken of een uitnodiging
-		krijgen!
+		gescoord hebben.
+		<br />De groepen zijn <strong>niet</strong> publiek, je moet dus zelf een groep maken of een
+		uitnodiging krijgen!
+		<br />
+		Er is 1 <a href="/group/public">publieke groep</a> waar iedereen automatisch in zit. Heb je dat
+		liever niet of gebruik je liever een alias dan kan je dit aanpassen in
+		<a href="/profile">je profiel</a>.
 	</section>
 	<section class="section">
 		<h1 class="title"><span>GDPR</span></h1>
@@ -48,13 +46,14 @@
 			Facebook ID en je volledige naam. Deze gegevens worden <strong>niet</strong> gedeeld met derde
 			partijen. <br />
 			Wanneer je inlogt, ga je akkoord dat deze website de bovenstaande gegevens mag beheren in context
-			van deze pronostiek.
+			van deze pronostiek. <br />
+			Enkele dagen na laatste afleveringen worden alle gegevens definitief gewist.
 		</p>
-		<p class="align-inital">
+		<!--p class="align-inital">
 			Wij gebruiken Google Analytics om de gebruikerservaring te kunnen optimaliseren. Het gebruik
 			van een Ad Blocker zorgt ervoor dat deze data niet doorstroomt, het gebruik hiervan wordt
 			aangemoedigd indien je dit niet wenst.
-		</p>
+		</p-->
 	</section>
 	<section class="section">
 		<h1 class="title"><span>Disclaimer</span></h1>
