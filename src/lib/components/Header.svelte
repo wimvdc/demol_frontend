@@ -1,24 +1,29 @@
+<script context="module" lang="ts">
+	import { browser } from '$app/env';
+	export const ssr = false;
+</script>
+
 <script>
 	import { baseUrl } from '$lib/utils';
 	export let isLoggedIn = true;
 
-	// $: if (isLoggedIn) {
-	// 	setTimeout(() => {
-	// 		document.querySelectorAll('a.navbar-item').forEach((navitem) => {
-	// 			navitem.addEventListener('click', (e) => {
-	// 				document.getElementById('basicnavbar').classList.toggle('is-active');
-	// 			});
-	// 		});
-	// 	}, 1000);
-	// }
+	$: if (isLoggedIn) {
+		setTimeout(() => {
+			document.querySelectorAll('a.navbar-item').forEach((navitem) => {
+				navitem.addEventListener('click', (e) => {
+					document.getElementById('basicnavbar').classList.toggle('is-active');
+				});
+			});
+		}, 1000);
+	}
 
-	// document.addEventListener('DOMContentLoaded', () => {
-	// 	const navbarBurgers = document.getElementById('menu');
-	// 	navbarBurgers.addEventListener('click', () => {
-	// 		document.getElementById(navbarBurgers.dataset.target).classList.toggle('is-active');
-	// 		navbarBurgers.classList.toggle('is-active');
-	// 	});
-	// });
+	document.addEventListener('DOMContentLoaded', () => {
+		const navbarBurgers = document.getElementById('menu');
+		navbarBurgers.addEventListener('click', () => {
+			document.getElementById(navbarBurgers.dataset.target).classList.toggle('is-active');
+			navbarBurgers.classList.toggle('is-active');
+		});
+	});
 </script>
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -42,14 +47,14 @@
 			{#if isLoggedIn}
 				<a class="navbar-item" href="/game"> Mollen </a>
 				<a class="navbar-item" href="/group"> Groepen </a>
-				<!--div class="navbar-item has-dropdown is-hoverable"-->
-				<!-- svelte-ignore a11y-missing-attribute -->
-				<!--a class="navbar-link"> Statistieken </a>
+				<div class="navbar-item has-dropdown is-hoverable">
+					<!--svelte-ignore a11y-missing-attribute-->
+					<a class="navbar-link"> Statistieken </a>
 					<div class="navbar-dropdown">
 						<a class="navbar-item" href="/insight/me"> Mijn inzet </a>
 						<a class="navbar-item" href="/insight"> Iedereen zijn inzet </a>
 					</div>
-				</div-->
+				</div>
 			{/if}
 			<a class="navbar-item" href="/info"> Info </a>
 		</div>

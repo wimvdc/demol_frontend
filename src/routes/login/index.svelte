@@ -14,11 +14,11 @@
 				<span>Login via Facebook</span></a
 			>
 		</div>
-		<div class="row">
+		<!-- <div class="row">
 			<a href="{baseUrl}/auth/v1/twitter" class="social-button" id="twitter-connect">
 				<span>Login via Twitter</span></a
 			>
-		</div>
+		</div> -->
 	</div>
 </div>
 
