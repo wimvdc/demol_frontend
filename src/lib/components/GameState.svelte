@@ -11,6 +11,11 @@
 		Alles of niets, <a href="#/endgame">kies nu</a> je Mol!<br />
 		Aanpassen kan nog tot zondag 20u00
 	</div>
+{:else if round === 0}
+	<div>
+		Na de eerst aflevering, om 22u00, kan je beginnen met stemmen (tot en met de start van de
+		volgende aflevering).
+	</div>
 {:else if voteopen === false && !finished}
 	<div>
 		Ronde {round} zit erop. Vanaf 22u00 start de volgende ronde en kan je weer stemmen.
