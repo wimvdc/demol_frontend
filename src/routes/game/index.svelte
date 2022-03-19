@@ -30,8 +30,9 @@
 		} catch (error) {
 			result = 3;
 			console.log(error);
+		} finally {
+			selected = await getData('/v1/game/mol');
 		}
-		selected = await getData('/v1/game/mol');
 	}
 </script>
 
