@@ -15,7 +15,7 @@
 		]);
 		voteopen = result[0].value.voteopen;
 		candidates = result[1].value;
-		selected = result[2].value ? result[2].value : selected;
+		if (result[0].value.round > 0) selected = result[2].value ? result[2].value : selected;
 	});
 
 	async function save(myMol) {
