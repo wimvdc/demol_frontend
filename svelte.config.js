@@ -11,17 +11,8 @@ const config = {
 		adapter: adapter({
 			// default options are shown
 			out: 'build',
-			precompress: false,
-			env: {
-				port: 7700,
-				origin: 'https://tst-de.mol.exposed'
-			}
-		}),
-
-		// Override http methods in the Todo forms
-		methodOverride: {
-			allowed: ['PATCH', 'DELETE']
-		}
+			envPrefix: 'MOL_'
+		})
 	}
 };
 
