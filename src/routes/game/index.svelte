@@ -15,7 +15,6 @@
 		]);
 		voteopen = result[0].value.voteopen;
 		candidates = result[1].value;
-		console.log(result[2].value);
 		selected = result[2].value ? result[2].value : selected;
 	});
 
@@ -36,6 +35,9 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Mollen</title>
+</svelte:head>
 <div class="has-text-centered">
 	{#if voteopen}
 		<h1 class="title is-2">Wie is De Mol?</h1>

@@ -16,6 +16,9 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Publieke groep</title>
+</svelte:head>
 <div class="container">
 	<p class="title">
 		<span class="underline">{detail.name}</span>

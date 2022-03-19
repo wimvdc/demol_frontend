@@ -14,6 +14,9 @@
 	});
 </script>
 
+<svelte:head>
+	<title>{detail.name}</title>
+</svelte:head>
 <div class="container">
 	<p class="title">
 		<span class="underline">{detail.name}</span>

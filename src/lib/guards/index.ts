@@ -10,7 +10,6 @@ export async function authGuard({ url }: LoadInput): Promise<LoadOutput> {
 
 	if (loggedIn && url.pathname === '/home') {
 		const data = sessionStorage.getItem('referer');
-		console.log('redirect!', data);
 		if (data) {
 			sessionStorage.removeItem('referer');
 			return { status: 302, redirect: data };

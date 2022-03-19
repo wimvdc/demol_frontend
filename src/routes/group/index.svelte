@@ -9,6 +9,10 @@
 	let data = getGroups();
 </script>
 
+<svelte:head>
+	<title>Groepen</title>
+</svelte:head>
+
 <div class="container">
 	<a href="/group/new" class="float">
 		<i class="fas fa-plus" />

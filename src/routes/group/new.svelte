@@ -24,6 +24,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Nieuwe groep</title>
+</svelte:head>
+
 <div class="container">
 	{#if result == 0 || result == 1062}
 		<div class="field">

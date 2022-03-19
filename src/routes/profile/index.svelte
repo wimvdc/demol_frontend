@@ -31,6 +31,9 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Mijn profiel</title>
+</svelte:head>
 <div class="container">
 	<p class="intro">
 		Wil je jouw echte naam niet gebruiken? Of wil je met je adelijke titel aangesproken worden? Stel

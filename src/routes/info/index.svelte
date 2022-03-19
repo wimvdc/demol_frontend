@@ -2,6 +2,10 @@
 	export const prerender = true;
 </script>
 
+<svelte:head>
+	<title>FAQ</title>
+</svelte:head>
+
 <div class="container">
 	<section class="section">
 		<h1 class="title"><span>Hoe werkt het?</span></h1>

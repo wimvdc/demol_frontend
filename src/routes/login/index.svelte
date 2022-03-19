@@ -2,6 +2,9 @@
 	import { baseUrl } from '$lib/utils';
 </script>
 
+<svelte:head>
+	<title>Login</title>
+</svelte:head>
 <div class="bg">
 	<div class="has-text-centered">
 		<div class="row">

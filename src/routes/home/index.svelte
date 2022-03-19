@@ -86,12 +86,6 @@
 		}
 	}
 
-	.voting {
-		display: flex;
-		align-items: center;
-		height: 100%;
-	}
-
 	.new {
 		text-align: left;
 		ul {

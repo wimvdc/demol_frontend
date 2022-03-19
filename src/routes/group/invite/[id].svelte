@@ -21,6 +21,9 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Uitnodiging</title>
+</svelte:head>
 <div class="container">
 	{#if result == -1}
 		<div class="notification is-danger">
