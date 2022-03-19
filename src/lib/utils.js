@@ -68,4 +68,6 @@ export const preCandidates = [
 	{ name: 'unnamed', isOut: 0 },
 	{ name: 'unnamed', isOut: 0 },
 	{ name: 'unnamed', isOut: 0 }
+	{ name: 'unnamed', isOut: 0 }
+	{ name: 'unnamed', isOut: 0 }
 ];
