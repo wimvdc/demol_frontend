@@ -9,6 +9,9 @@
 	let info = getInfo();
 </script>
 
+<svelte:head>
+	<title>Home</title>
+</svelte:head>
 <div class="container">
 	<div class="tile is-ancestor">
 		<div class="tile is-vertical">
