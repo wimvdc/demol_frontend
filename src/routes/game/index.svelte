@@ -69,6 +69,7 @@
 					src="/kandidaten/{item.name.toLowerCase()}.jpg"
 					alt="Foto van {item.name}"
 					class:mol={selected.uuid === item.uuid}
+					class:out={item.isOut === 1}
 					on:click={() => save(item)}
 				/>
 			</div>
@@ -85,6 +86,9 @@
 		&.mol {
 			border: 9px solid green;
 			opacity: 1;
+		}
+		&.out {
+			opacity: 0.2;
 		}
 		&:hover {
 			cursor: pointer;
