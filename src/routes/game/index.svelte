@@ -70,7 +70,7 @@
 					alt="Foto van {item.name}"
 					class:mol={selected.uuid === item.uuid}
 					class:out={item.isOut === 1}
-					on:click={() => save(item)}
+					on:click={() => { item.isOut === 1 ? null : save(item)}
 				/>
 			</div>
 		</div>
