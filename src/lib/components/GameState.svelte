@@ -13,12 +13,12 @@
 	</div>
 {:else if round === 0}
 	<div>
-		Na de eerst aflevering, om 21u35, kan je beginnen met stemmen (tot en met de start van de
+		Na de eerst aflevering, om 22u00, kan je beginnen met stemmen (tot en met de start van de
 		volgende aflevering).
 	</div>
 {:else if voteopen === false && !finished}
 	<div>
-		Ronde {round - 1} zit erop. Vanaf 22u00 start de volgende ronde en kan je weer stemmen.
+		Ronde {round - 1} zit erop. Vanaf 21u35 start de volgende ronde en kan je weer stemmen.
 	</div>
 {:else if didVote}
 	<p class="title">Goed bezig, {user.firstname}!</p>
