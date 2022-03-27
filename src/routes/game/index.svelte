@@ -69,8 +69,10 @@
 					src="/kandidaten/{item.name.toLowerCase()}.jpg"
 					alt="Foto van {item.name}"
 					class:mol={selected.uuid === item.uuid}
-					class:out={item.isOut === 1}
-					on:click={() => { item.isOut === 1 ? null : save(item)}
+					class:out={item.isOut !== 0}
+					on:click={() => {
+						item.isOut !== 0 ? null : save(item);
+					}}
 				/>
 			</div>
 		</div>

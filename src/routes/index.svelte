@@ -52,7 +52,7 @@
 				<div class="tile is-parent">
 					<article class="tile is-child notification is-info">
 						<p class="title">Groepen</p>
-						<p class="subtitle">Je bent lid van volgende groepen</p>
+						<p class="subtitle">Je bent lid van volgende groepen:</p>
 						<div>
 							{#await info}
 								Laden...

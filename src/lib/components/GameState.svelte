@@ -21,7 +21,7 @@
 		Ronde {round} zit erop. Vanaf 22u00 start de volgende ronde en kan je weer stemmen.
 	</div>
 {:else if didVote}
-	<p class="title">Goed bezig {user.firstname}!</p>
+	<p class="title">Goed bezig, {user.firstname}!</p>
 	<div>
 		Je hebt deze ronde al gestemd!<br />
 		Aanpassen kan nog tot en met zondag 19u55.

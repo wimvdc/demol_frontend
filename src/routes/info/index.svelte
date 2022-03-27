@@ -11,7 +11,7 @@
 		<h1 class="title"><span>Hoe werkt het?</span></h1>
 		<ul>
 			<li>De eerste ronde start direct na aflevering 1.</li>
-			<li>Na iedere aflevering, vanaf 22u00, kan je stemmen.</li>
+			<li>Na iedere aflevering, vanaf 21u35, kan je stemmen.</li>
 			<li>Zit je verdachte na de aflevering nog in het spel? Dan score je punten!</li>
 			<li>
 				Punten worden op volgende manier berekend: 1 punten maal het aflevering nummer. <br />
