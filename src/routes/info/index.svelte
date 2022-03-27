@@ -33,7 +33,7 @@
 	</section>
 	<section class="section">
 		<h1 class="title"><span>Groepen</span></h1>
-		Je kan samen met je vrienden, familie, collega's ... spelen in 1 of meerdere groepen. Je kan zelf
+		Je kan samen met je vrienden, familie, collega's ... spelen in 0 of meerdere groepen. Je kan zelf
 		een groep aanmaken en je vrienden uitnodigen. Na iedere aflevering kan je zien hoeveel punten ze
 		gescoord hebben.
 		<br />De groepen zijn <strong>niet</strong> publiek, je moet dus zelf een groep maken of een
