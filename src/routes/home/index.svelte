@@ -18,8 +18,8 @@
 			<p>Melding</p>
 		</div>
 		<div class="message-body">
-			In de loop van maandag zullen de mensen die Philippe als Mol aangeduid hebben extra punten
-			krijgen.<br />
+			In de loop van maandag zullen de mensen die Philippe als Mol aangeduid hebben, extra punten
+			krijgen!<br />
 			Ook zal je volgende week uitzonderlijk langer kunnen stemmen, namelijk tot 21u00.
 		</div>
 	</article>
