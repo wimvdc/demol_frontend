@@ -24,7 +24,7 @@
 	<p class="title">Goed bezig, {user.firstname}!</p>
 	<div>
 		Je hebt deze ronde al gestemd!<br />
-		Aanpassen kan nog tot en met zondag 19u55.
+		Aanpassen kan nog tot en met zondag 21u00.
 	</div>
 {:else if round < 7}
 	<div class="voting">
