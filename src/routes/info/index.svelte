@@ -28,7 +28,7 @@
 			<li>
 				Na de bekendmaking van de Mol zullen de definitieve scores worden berekend. Je krijgt voor
 				iedere keer dat je de mol juist hebt aangeduid extra punten. Had je in ronde 1 al de juiste
-				Mol te pakken? Dan verdien je 7 punten extra. Had je in ronde pas de juiste Mol? Dan krijg
+				Mol te pakken? Dan verdien je 7 punten extra. Had je in ronde 2 pas de juiste Mol? Dan krijg
 				je 6 punten. En zo verder.
 			</li>
 		</ul>
