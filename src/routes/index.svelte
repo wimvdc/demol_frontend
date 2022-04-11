@@ -9,7 +9,20 @@
 	let info = getInfo();
 </script>
 
+<svelte:head>
+	<title>Home</title>
+</svelte:head>
 <div class="container">
+	<article class="message is-dark">
+		<div class="message-header">
+			<p>Melding</p>
+		</div>
+		<div class="message-body">
+			In de loop van maandag zullen de mensen die Philippe als Mol aangeduid hebben, extra punten
+			krijgen!<br />
+			Ook zal je volgende week uitzonderlijk langer kunnen stemmen, namelijk tot 21u00.
+		</div>
+	</article>
 	<div class="tile is-ancestor">
 		<div class="tile is-vertical">
 			<div class="tile">
@@ -52,7 +65,7 @@
 				<div class="tile is-parent">
 					<article class="tile is-child notification is-info">
 						<p class="title">Groepen</p>
-						<p class="subtitle">Je bent lid van volgende groepen:</p>
+						<p class="subtitle">Je bent lid van volgende groepen</p>
 						<div>
 							{#await info}
 								Laden...
@@ -81,12 +94,6 @@
 		a {
 			text-decoration: none;
 		}
-	}
-
-	.voting {
-		display: flex;
-		align-items: center;
-		height: 100%;
 	}
 
 	.new {

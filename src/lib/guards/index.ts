@@ -8,7 +8,7 @@ export async function authGuard({ url }: LoadInput): Promise<LoadOutput> {
 	}
 	const loggedIn = await isLoggedIn();
 
-	if (loggedIn && url.pathname === '/home') {
+	if (loggedIn && url.pathname === '/') {
 		const data = sessionStorage.getItem('referer');
 		if (data) {
 			sessionStorage.removeItem('referer');
@@ -17,7 +17,7 @@ export async function authGuard({ url }: LoadInput): Promise<LoadOutput> {
 	}
 
 	if (loggedIn && url.pathname === '/login') {
-		return { status: 302, redirect: '/home' };
+		return { status: 302, redirect: '/' };
 	} else if (loggedIn || url.pathname === '/login') {
 		return {};
 	} else {
