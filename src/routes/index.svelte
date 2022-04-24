@@ -13,16 +13,13 @@
 	<title>Home</title>
 </svelte:head>
 <div class="container">
-	<article class="message is-dark">
+	<!--article class="message is-dark">
 		<div class="message-header">
 			<p>Melding</p>
 		</div>
 		<div class="message-body">
-			Je zal deze week uitzonderlijk langer kunnen stemmen, namelijk tot 21u00.<br />
-			Had je in ronde 1, 2 en/of 3 Philippe als Mol gekozen? Dan kreeg je respectievelijk 7, 6 en/of
-			5 punten extra.
 		</div>
-	</article>
+	</article-->
 	<div class="tile is-ancestor">
 		<div class="tile is-vertical">
 			<div class="tile">
