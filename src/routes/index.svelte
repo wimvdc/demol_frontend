@@ -38,26 +38,7 @@
 							<GameState {...result} />
 						{/await}
 					</article>
-					{#await info then result}
-						{#if result.round === 7}
-							<article class="tile is-child notification is-primary" style="text-align:center;">
-								<p class="title">Finale spel!</p>
-								<div class="new">
-									Je hebt momenteel {result.spendable} punten verdiend.<br />
-									Deze laatste ronde verloopt anders dan voorgaande ronden:
-									<ul>
-										<li>
-											Je <a href="/endgame">kiest</a> deze keer enkel jouw Mol (zonder punten).
-										</li>
-										<li>
-											Op de <a href="/info">info</a> pagina vind je hoe eindscore zal worden berekend.
-										</li>
-										<li>We proberen tegen zondag 21u45 de definitieve score online te zetten.</li>
-									</ul>
-								</div>
-							</article>
-						{/if}
-					{/await}
+					{#await info}{/await}
 				</div>
 				<div class="tile is-parent">
 					<article class="tile is-child notification is-info">
