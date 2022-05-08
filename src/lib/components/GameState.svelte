@@ -1,6 +1,6 @@
 <script>
 	export let voteopen = false;
-	export let finished = false;
+	export let finished = true;
 	export let didVote = false;
 	export let round = 0;
 	export let user = {};
@@ -21,7 +21,7 @@
 		Je hebt deze ronde al gestemd!<br />
 		Aanpassen kan nog tot en met zondag 20u00.
 	</div>
-{:else if round < 9}
+{:else if round < 8}
 	<div class="voting">
 		<p>
 			Je moet deze ronde nog stemmen.<br /> Mollen doe je <a href="/game">hier</a>.
@@ -31,7 +31,7 @@
 	<div class="voting">
 		<p class="title">Het avontuur zit erop!</p>
 		<div class="new">
-			Je hebt in totaal X punten verdiend.<br />
+			Den eindscores zijn berekend.<br />
 		</div>
 	</div>
 {/if}
