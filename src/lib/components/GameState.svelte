@@ -21,7 +21,7 @@
 		Je hebt deze ronde al gestemd!<br />
 		Aanpassen kan nog tot en met zondag 20u00.
 	</div>
-{:else if round <= 8}
+{:else if round < 8 && !finished}
 	<div class="voting">
 		<p>
 			Je moet deze ronde nog stemmen.<br /> Mollen doe je <a href="/game">hier</a>.
@@ -31,7 +31,7 @@
 	<div class="voting">
 		<p class="title">Het avontuur zit erop!</p>
 		<div class="new">
-			Den eindscores zijn berekend.<br />
+			Den eindscores zijn berekend!<br />
 		</div>
 	</div>
 {/if}
