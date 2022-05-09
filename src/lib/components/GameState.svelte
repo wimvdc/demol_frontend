@@ -11,7 +11,7 @@
 		Na de eerst aflevering, om 22u00, kan je beginnen met stemmen (tot en met de start van de
 		volgende aflevering).
 	</div>
-{:else if round === 0}
+{:else if finished}
 	<div class="voting">
 		<p class="title">Het avontuur zit erop!</p>
 		<div class="new">
