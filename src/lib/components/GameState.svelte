@@ -13,9 +13,9 @@
 	</div>
 {:else if finished} -->
 <div class="voting">
-	<p class="title">Het avontuur zit erop!</p>
+	<p class="title">Het avontuur zit erop 😢</p>
 	<div class="new">
-		Den eindscores zijn berekend!<br />
+		De eindscores zijn berekend!<br />
 	</div>
 </div>
 <!-- {:else if voteopen === false && !finished}
