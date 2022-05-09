@@ -11,6 +11,13 @@
 		Na de eerst aflevering, om 22u00, kan je beginnen met stemmen (tot en met de start van de
 		volgende aflevering).
 	</div>
+{:else if round === 0}
+	<div class="voting">
+		<p class="title">Het avontuur zit erop!</p>
+		<div class="new">
+			Den eindscores zijn berekend!<br />
+		</div>
+	</div>
 {:else if voteopen === false && !finished}
 	<div>
 		Ronde {round - 1} zit erop. Vanaf 21u35 start de volgende ronde en kan je weer stemmen.
@@ -21,17 +28,10 @@
 		Je hebt deze ronde al gestemd!<br />
 		Aanpassen kan nog tot en met zondag 20u00.
 	</div>
-{:else if round < 8 && !finished}
+{:else}
 	<div class="voting">
 		<p>
 			Je moet deze ronde nog stemmen.<br /> Mollen doe je <a href="/game">hier</a>.
 		</p>
-	</div>
-{:else}
-	<div class="voting">
-		<p class="title">Het avontuur zit erop!</p>
-		<div class="new">
-			Den eindscores zijn berekend!<br />
-		</div>
 	</div>
 {/if}
