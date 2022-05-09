@@ -6,19 +6,19 @@
 	export let user = {};
 </script>
 
-{#if round === 0}
+<!-- {#if round === 0}
 	<div>
 		Na de eerst aflevering, om 22u00, kan je beginnen met stemmen (tot en met de start van de
 		volgende aflevering).
 	</div>
-{:else if finished}
-	<div class="voting">
-		<p class="title">Het avontuur zit erop!</p>
-		<div class="new">
-			Den eindscores zijn berekend!<br />
-		</div>
+{:else if finished} -->
+<div class="voting">
+	<p class="title">Het avontuur zit erop!</p>
+	<div class="new">
+		Den eindscores zijn berekend!<br />
 	</div>
-{:else if voteopen === false && !finished}
+</div>
+<!-- {:else if voteopen === false && !finished}
 	<div>
 		Ronde {round - 1} zit erop. Vanaf 21u35 start de volgende ronde en kan je weer stemmen.
 	</div>
@@ -34,4 +34,4 @@
 			Je moet deze ronde nog stemmen.<br /> Mollen doe je <a href="/game">hier</a>.
 		</p>
 	</div>
-{/if}
+{/if} -->
