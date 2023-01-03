@@ -3,6 +3,12 @@
 `.env` file:
 VITE_PUBLIC_API_BASE_URL=http://localhost:3000
 
+# Run
+
+```bash
+npm run dev
+```
+
 # Build & deploy
 
 ```bash
