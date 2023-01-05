@@ -13,8 +13,7 @@
 	onMount(async () => {
 		const result = await Promise.allSettled([
 			getData('/v1/game/info'),
-			getData('/v1/candidates'),
-			getData('/v1/game/mol')
+			getData('/v1/candidates')
 		]);
 		voteopen = result[0].value.voteopen;
 		startPoints = result[0].value.spendable;
@@ -36,7 +35,7 @@
 				console.log(error);
 			}
 			candidates = await getData('/v1/candidates');
-	
+		// End game logic
 		// result = 0;
 		// try {
 		// 	if (voteopen) {
@@ -80,6 +79,13 @@
 		<div class="notification is-success">Je selectie werd opgeslagen 👌</div>
 	{/if}
 
+	{#if result == 2}
+		<div class="notification is-danger">
+		Oei, je hebt te veel punten uitgedeeld! 😰 <br />
+		Je kunt deze ronde maar <b>{startPoints}</b> punten verdelen.
+		</div>
+	{/if}
+
 	{#if result == 3}
 		<div class="notification is-danger">
 			Oei, er is iets fout gegaan 😰 <br />
@@ -110,19 +116,7 @@
 </div>
 
 <style lang="scss">
-	img {
-		border-radius: 50%;
-		margin-bottom: -30px;
-		border: 9px solid transparent;
-		opacity: 0.8;
-		&.mol {
-			border: 9px solid green;
-			opacity: 1;
-		}
-		&:hover {
-			cursor: pointer;
-		}
-	}
+
 
 	.candidate {
 		&.out {
@@ -139,6 +133,32 @@
 			border-radius: 50px;
 			position: relative;
 			border: 5px solid transparent;
+			@media only screen and (max-width: 600px) {
+				width: 100%;
+				border-radius: 0;
+			}
+		}
+
+		img {
+			border-radius: 50%;
+			margin-bottom: -30px;
+			border: 9px solid transparent;
+			opacity: 0.9;
+			&.mol {
+				border: 9px solid green;
+				opacity: 1;
+			}
+			&:hover {
+				cursor: pointer;
+			}
+			@media only screen and (max-width: 600px) {
+				border-radius: 0;
+				border: 0px;
+			}
+		}
+
+		input {
+			width: 50px;
 		}
 	}
 
@@ -146,13 +166,16 @@
     .name {
       width: 100%;
     }
+	img {
+		border: 0;
+	}
     h1.mol {
       font-size: 1.25rem;
     }
   }
 
 	h1 {
-		margin-bottom: 30px;
+		margin-bottom: 5px;
 	}
 
 	.column {

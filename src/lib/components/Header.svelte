@@ -54,7 +54,7 @@
 	<div id="basicnavbar" class="navbar-menu" class:is-active={showMobile}>
 		<div class="navbar-start">
 			{#if isLoggedIn}
-				<!--a class="navbar-item" on:click={hide} href="/game"> Mollen </a-->
+				<a class="navbar-item" on:click={hide} href="/game"> Mollen </a>
 				<a class="navbar-item" on:click={hide} href="/group"> Groepen </a>
 				<!-- <div class="navbar-item has-dropdown is-hoverable"> -->
 				<!--svelte-ignore a11y-missing-attribute-->
