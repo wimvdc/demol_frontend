@@ -1,15 +1,14 @@
-FROM node:18-alpine AS mol-frontend
-
+FROM node:18-alpine AS build-app
 WORKDIR /app
 COPY . .
 RUN npm ci
 RUN npm run build
 
-FROM node:18-alpine AS deploy-app
+FROM node:18-alpine AS mol-frontend
 
 WORKDIR /app
 RUN rm -rf ./*
-COPY --from=mol-frontend /app/package.json .
-COPY --from=mol-frontend /app/build .
+COPY --from=build-app /app/package.json .
+COPY --from=build-app /app/build .
 RUN npm i --omit=dev --ignore-scripts
-CMD ["node", "index.js"]
+CMD ["node", "build/index.js"]
