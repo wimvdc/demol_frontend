@@ -1,4 +1,4 @@
-FROM node:18-alpine AS build-app
+FROM node:18-alpine AS mol-frontend
 
 WORKDIR /app
 COPY . .
