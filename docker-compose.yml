@@ -6,5 +6,6 @@ services:
       context: .
       dockerfile: Dockerfile
       target: deploy-app
+    image: mol-frontend:dev
     ports:
       - 3002:3000

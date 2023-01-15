@@ -12,6 +12,6 @@ npm run dev
 # Build & deploy
 
 ```bash
-docker-compose --env-file .env build app-node
-docker-compose up -d app-node
+docker-compose --env-file .env build mol-frontend
+docker-compose up -d mol-frontend
 ```
