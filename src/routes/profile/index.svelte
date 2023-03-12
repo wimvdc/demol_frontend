@@ -24,7 +24,7 @@
 			} else if (error.message && error.message == 7600) {
 				result = 7600;
 			} else {
-				console.log(error);
+				console.error(error);
 				result = 2;
 			}
 		}

@@ -2,7 +2,6 @@ export const baseUrl = `${import.meta.env.VITE_PUBLIC_API_BASE_URL}`;
 
 export const getData = async (url) => {
 	const response = await fetch(`${baseUrl}${url}`, { credentials: 'include' });
-	console.log(response.status);
 	if (!response.ok) {
 		if (response.status === 401) {
 			window.location.href = '/login';

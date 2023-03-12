@@ -18,7 +18,7 @@
 				result = 7600;
 			} else {
 				result = 2;
-				console.log(error);
+				console.error(error);
 			}
 		}
 	}

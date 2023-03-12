@@ -27,7 +27,6 @@
 	let showMobile = false;
 	const handleMobileIconClick = (event) => {
 		showMobile = !showMobile;
-		console.log('ok!');
 	};
 
 	const hide = () => {
@@ -37,7 +36,7 @@
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
 	<div class="navbar-brand">
-		<a class="navbar-item" href="/" id="appname" on:click={hide}> De Mol '22 </a>
+		<a class="navbar-item" href="/" id="appname" on:click={hide}> De Mol '23 </a>
 		<!-- svelte-ignore a11y-missing-attribute -->
 		<a
 			id="menu"

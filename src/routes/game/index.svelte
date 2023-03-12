@@ -32,7 +32,7 @@
 				}
 			} catch (error) {
 				result = 3;
-				console.log(error);
+				console.error(error);
 			}
 			candidates = await getData('/v1/candidates');
 		// End game logic
@@ -46,7 +46,7 @@
 		// 	}
 		// } catch (error) {
 		// 	result = 3;
-		// 	console.log(error);
+		// 	console.error(error);
 		// } finally {
 		// 	selected = await getData('/v1/game/mol');
 		// }
