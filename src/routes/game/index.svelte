@@ -98,10 +98,17 @@
 	{#each candidates as item}
 		<div class="column is-6-touch is-4-desktop has-text-centered">
 			<div class="candidate" class:out={item.isOut !== 0}>
+				{#if item.name == "?"}
+				<img
+					src="/kandidaten/unnamed.jpg"
+					alt="Foto van ?"
+				/>
+				{:else}
 				<img
 					src="/kandidaten/{item.name.toLowerCase()}.jpg"
 					alt="Foto van {item.name}"
 				/>
+				{/if}
 				<div class="name">
 					<h1 class="mol">
 						{voteopen ? item.name : item.name + (item.points ? ': ' + item.points : '')}
@@ -142,6 +149,7 @@
 		img {
 			border-radius: 50%;
 			margin-bottom: -30px;
+			max-width: 268px;
 			border: 9px solid transparent;
 			opacity: 0.9;
 			&.mol {
