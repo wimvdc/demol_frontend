@@ -156,9 +156,9 @@
 				border: 9px solid green;
 				opacity: 1;
 			}
-			&:hover {
+			/*&:hover {
 				cursor: pointer;
-			}
+			}*/
 			@media only screen and (max-width: 600px) {
 				border-radius: 0;
 				border: 0px;
