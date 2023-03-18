@@ -44,6 +44,7 @@
 					<article class="tile is-child notification is-info">
 						<p class="title">Groepen</p>
 						{#await info}
+						<p class="subtitle"></p>
 						{:then result}
 							{#if result.groups.length > 0}
 								<p class="subtitle">Je bent lid van volgende groepen</p>

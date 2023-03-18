@@ -10,14 +10,18 @@
 	<section class="section">
 		<h1 class="title"><span>Hoe werkt het?</span></h1>
 		<ul>
-			<li>De eerste ronde start direct na aflevering 1.</li>
-			<li>Na iedere aflevering, vanaf 21u35, kan je stemmen.</li>
+			<li>De eerste ronde start direct na aflevering 1 en je krijgt 3 punten om te starten.</li>
+			<li>Na iedere aflevering, rond 21u40, kan je beginnen met stemmen.</li>
+			<li>Je gebruikt je punten om in te zetten. Je kan 1 of meerdere punten inzitten op 0 of meerdere kandidaten.</li>
 			<li>Zit je verdachte na de aflevering nog in het spel? Dan score je punten!</li>
 			<li>
-				Punten worden op volgende manier berekend: 1 punten maal het aflevering nummer. <br />
-				Voorbeeld: 1 punt voor het eerste aflevering, 2 voor het tweede aflevering, etc. <br />Ligt
-				je verdachte er toch onverwachts uit? Geen probleem, dan krijg je geen punten deze ronde
-				maar kan je gewoon terug stemmen voor de volgende ronde!
+				Punten worden op volgende manier berekend: 1 punt maal het ronde nummer maal het aantal ingezette punten. </li>
+			<li>Voorbeeld: Aflevering 3 is net afgelopen. Je had 5 punten om in te zetten en hebt 4 punten ingezet, telkens 1 punt op een andere kandidaat. <br>
+			Spijtig heeft 1 van je verdachte een rood scherm gekregen. Dan score 3 punten (van de overgebleven 3 verdachten) maal 2 (want je pronostiek is van ronde 2) dat zijn 6 punten. <br>
+			Je krijgt je originele 5 punten terug en je totaal is nu 11 punten. Deze kan je opnieuw inzetten voor de volgende ronde.
+			</li> 
+			<li>Ligt je verdachte er toch uit? Geen probleem, dan krijg je geen punten deze ronde
+				maar kan je gewoon terug stemmen voor de volgende ronde.
 			</li>
 			<!--li>
 				Tijdens de laatste ronde moet je enkel jouw Mol kiezen. Na de bekendmaking van De Mol krijg
@@ -26,11 +30,14 @@
 				worden bij je aantal punten na ronde 6 opgeteld.
 			</li-->
 			<li>
+				Na de bekendmaking van de Mol zullen de definitieve scores worden berekend. Je scoort namelijk nog punten voor elke keer dat je de Mol juist hebt aangeduid in de voorgaande ronden.
+			</li>
+			<!--li>
 				Na de bekendmaking van de Mol zullen de definitieve scores worden berekend. Je krijgt voor
 				iedere keer dat je de mol juist hebt aangeduid extra punten. Had je in ronde 1 al de juiste
 				Mol te pakken? Dan verdien je 7 punten extra. Had je in ronde 2 pas de juiste Mol? Dan krijg
 				je 6 punten. En zo verder.
-			</li>
+			</li-->
 		</ul>
 	</section>
 	<section class="section">

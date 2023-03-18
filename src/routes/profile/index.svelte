@@ -40,7 +40,7 @@
 		dan hieronder een alias in.
 	</p>
 	<div class="field">
-		<label class="label" for="alias">Alias</label>
+		<label class="label" for="alias">Mijn alias</label>
 		<div class="control">
 			<input
 				id="alias"
@@ -85,8 +85,6 @@
 			<button class="button is-success" on:click={insert} disabled={!formValid}>Opslaan</button>
 		</div>
 	</div>
-
-	<hr />
 </div>
 
 <style>

@@ -98,7 +98,7 @@
 	{#each candidates as item}
 		<div class="column is-6-touch is-4-desktop has-text-centered">
 			<div class="candidate" class:out={item.isOut !== 0}>
-				{#if item.name == "?"}
+				{#if item.name.includes("?")}
 				<img
 					src="/kandidaten/unnamed.jpg"
 					alt="Foto van ?"
