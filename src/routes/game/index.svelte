@@ -149,16 +149,15 @@
 		img {
 			border-radius: 50%;
 			margin-bottom: -30px;
-			max-width: 268px;
 			border: 9px solid transparent;
 			opacity: 0.9;
 			&.mol {
 				border: 9px solid green;
 				opacity: 1;
 			}
-			/*&:hover {
-				cursor: pointer;
-			}*/
+			@media only screen and (min-width: 601px) {
+				max-width: 268px;
+			}
 			@media only screen and (max-width: 600px) {
 				border-radius: 0;
 				border: 0px;
@@ -190,7 +189,11 @@
 		margin-bottom: 2em;
 	}
 
+	.columns {
+		margin-top: 5px;
+	}
+
 	#messages .notification {
-		margin: 12px 0;
+		margin-top: 12px;
 	}
 </style>

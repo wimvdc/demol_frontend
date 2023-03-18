@@ -26,7 +26,7 @@
 				<div class="tile is-parent is-vertical">
 					<article class="tile is-child notification is-danger" style="text-align:center;">
 						{#await info}
-							<p class="title">Laden...</p>
+							<p class="title">Ronde </p>
 						{:then result}
 							<p class="title">Ronde #{result.round}</p>
 						{/await}
