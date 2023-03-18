@@ -8,7 +8,7 @@
 
 {#if round === 0}
 	<div>
-		Na de eerst aflevering, om 22u00, kan je beginnen met stemmen (tot en met de start van de
+		Na de eerst aflevering, rond 21u45, kan je voor de eerste keer stemmen (tot en met de start van de
 		volgende aflevering).
 	</div>
 {:else if finished}

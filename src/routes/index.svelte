@@ -43,7 +43,12 @@
 				<div class="tile is-parent">
 					<article class="tile is-child notification is-info">
 						<p class="title">Groepen</p>
-						<p class="subtitle">Je bent lid van volgende groepen</p>
+						{#await info}
+						{:then result}
+							{#if result.groups.length > 0}
+								<p class="subtitle">Je bent lid van volgende groepen</p>
+							{/if}
+						{/await}
 						<div>
 							{#await info}
 								Laden...
@@ -57,6 +62,9 @@
 										</li>
 									{/each}
 								</ul>
+							{#if result.groups.length == 0}
+								<p>Je kan <a href="/group/new">hier</a> zelf een groep aanmaken en mensen uitnodigen</p>
+							{/if}
 							{/await}
 						</div>
 					</article>
