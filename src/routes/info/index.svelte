@@ -12,13 +12,12 @@
 		<ul>
 			<li>De eerste ronde start direct na aflevering 1 en je krijgt 3 punten om te starten.</li>
 			<li>Na iedere aflevering, rond 21u40, kan je beginnen met stemmen.</li>
-			<li>Je gebruikt je punten om in te zetten. Je kan 1 of meerdere punten inzitten op 0 of meerdere kandidaten.</li>
+			<li>Je gebruikt jouw punten om in te zetten. Je kan 1 of meerdere punten inzetten op 0 of meerdere kandidaten.</li>
 			<li>Zit je verdachte na de aflevering nog in het spel? Dan score je punten!</li>
-			<li>
-				Punten worden op volgende manier berekend: 1 punt maal het ronde nummer maal het aantal ingezette punten. </li>
+			<li>Punten worden op volgende manier berekend: 1 punt maal het ronde nummer maal het aantal ingezette punten. </li>
 			<li>Voorbeeld: Aflevering 3 is net afgelopen. Je had 5 punten om in te zetten en hebt 4 punten ingezet, telkens 1 punt op een andere kandidaat. <br>
 			Spijtig heeft 1 van je verdachte een rood scherm gekregen. Dan score 3 punten (van de overgebleven 3 verdachten) maal 2 (want je pronostiek is van ronde 2) dat zijn 6 punten. <br>
-			Je krijgt je originele 5 punten terug en je totaal is nu 11 punten. Deze kan je opnieuw inzetten voor de volgende ronde.
+			Je krijgt je originele 5 punten terug en jouw totaal is nu 11 punten. Deze kan je opnieuw inzetten voor de volgende ronde.
 			</li> 
 			<li>Ligt je verdachte er toch uit? Geen probleem, dan krijg je geen punten deze ronde
 				maar kan je gewoon terug stemmen voor de volgende ronde.
@@ -42,7 +41,7 @@
 	</section>
 	<section class="section">
 		<h1 class="title"><span>Groepen</span></h1>
-		Je kan samen met je vrienden, familie, collega's ... spelen in 0 of meerdere groepen. Je kan zelf
+		Je kan samen met je vrienden, familie, collega's ... spelen in 1 of meerdere groepen. Je kan zelf
 		een groep aanmaken en je vrienden uitnodigen. Na iedere aflevering kan je zien hoeveel punten ze
 		gescoord hebben.
 		<br />De groepen zijn <strong>niet</strong> publiek, je moet dus zelf een groep maken of een
@@ -79,7 +78,7 @@
 	<section class="section">
 		<h1 class="title"><span>Contact</span></h1>
 		<p class="align-inital">
-			Je kan contact me mij opnemen via het "Wie is de mol" forum (<a
+			Je kan contact met mij opnemen via het "Wie is de mol" forum (<a
 				href="https://forum.wieisdemol.be/ucp.php?i=pm&mode=compose&u=4499"
 				target="_blank"
 				rel="noopener">klik</a
@@ -92,7 +91,7 @@
 			<a
 				href="https://www.wieisdemol.be/"
 				target="_blank"
-				rel="noopener"
+				rel="noreferer"
 				class="button is-link is-outlined">Fansite</a
 			>
 			<a
