@@ -1,7 +1,7 @@
 <script>
 	export let voteopen = false;
 	export let finished = true;
-	export let didVote = false;
+	export let spend = 0;
 	export let round = 0;
 	export let user = {};
 </script>
@@ -22,7 +22,7 @@
 	<div>
 		Ronde {round - 1} zit erop. Vanaf 21u35 start de volgende ronde en kan je weer stemmen.
 	</div>
-{:else if didVote}
+{:else if spend > 0}
 	<p class="title">Goed bezig, {user.firstname}!</p>
 	<div>
 		Je hebt deze ronde al gestemd!<br />
