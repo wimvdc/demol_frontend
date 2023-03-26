@@ -23,10 +23,9 @@
 		Ronde {round - 1} zit erop. Vanaf 21u35 start de volgende ronde en kan je weer stemmen.
 	</div>
 {:else if spend > 0}
-	<p class="title">Goed bezig, {user.firstname}!</p>
+	<p class="title">Goed bezig!</p>
 	<div>
-		Je hebt deze ronde al gestemd!<br />
-		Aanpassen kan nog tot en met zondag 20u00.
+		Je hebt deze ronde al gestemd maar aanpassen kan nog tot en met zondag 20u00.
 	</div>
 {:else}
 	<div class="voting">
