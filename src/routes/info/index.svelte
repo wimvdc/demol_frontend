@@ -56,17 +56,18 @@
 		<p class="align-inital">
 			Registeren is niet nodig, momenteel kan je inloggen aan de hand van je Google- of je Facebook
 			account. We vragen slechts een minimum aan gegevens aan de login-provider, namelijk: Google of
-			Facebook ID en je volledige naam. Deze gegevens worden <strong>niet</strong> gedeeld met derde
+			Facebook ID en je voor- en achternaam. Deze gegevens worden opgeslagen in onze eigen database en zal <strong>nooit</strong> gedeeld worden met derde
 			partijen. <br />
 			Wanneer je inlogt, ga je akkoord dat deze website de bovenstaande gegevens mag beheren in context
-			van deze pronostiek. <br />
+			van deze pronostiek. 
 			Enkele dagen na laatste afleveringen worden alle gegevens definitief gewist.
 		</p>
-		<!--p class="align-inital">
-			Wij gebruiken Google Analytics om de gebruikerservaring te kunnen optimaliseren. Het gebruik
-			van een Ad Blocker zorgt ervoor dat deze data niet doorstroomt, het gebruik hiervan wordt
-			aangemoedigd indien je dit niet wenst.
-		</p-->
+		<p class="align">
+			<br />
+			Indien je één van jouw <a href="https://www.gegevensbeschermingsautoriteit.be/burger/privacy/wat-zijn-mijn-rechten" 				target="_blank"
+				rel="noopener">GDPR</a> rechten willen uitoefenen, vul dan het <a href="/feedback">feedback</a> formulier in.
+			We doen ons best om de aanvraag binnen de 7 dagen te verwerken.
+		</p>
 	</section>
 	<section class="section">
 		<h1 class="title"><span>Disclaimer</span></h1>

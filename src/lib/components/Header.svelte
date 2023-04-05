@@ -74,7 +74,7 @@
 					<a id="me" class="navbar-link is-arrowless"> <i class="fa-solid fa-user" /> </a>
 					<div class="navbar-dropdown is-right">
 						<a class="navbar-item" on:click={hide} href="/profile"> Mijn Profiel </a>
-						<!--a class="navbar-item" href="/feedback"> Feedback </a-->
+						<a class="navbar-item" href="/feedback"> Feedback </a>
 						<a class="navbar-item" href="{baseUrl}/auth/v1/logout"> Uitloggen </a>
 					</div>
 				</div>
