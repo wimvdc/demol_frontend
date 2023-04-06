@@ -51,24 +51,46 @@
 		liever niet of gebruik je liever een alias dan kan je dit aanpassen in
 		<a href="/profile">je profiel</a>.
 	</section>
-	<section class="section">
-		<h1 class="title"><span>GDPR</span></h1>
+
+	<section class="section" id="privacy">
+		<h1 class="title"><span>Privacy Policy</span></h1>
 		<p class="align-inital">
-			Registeren is niet nodig, momenteel kan je inloggen aan de hand van je Google- of je Facebook
-			account. We vragen slechts een minimum aan gegevens aan de login-provider, namelijk: Google of
-			Facebook ID en je voor- en achternaam. Deze gegevens worden opgeslagen in onze eigen database en zal <strong>nooit</strong> gedeeld worden met derde
-			partijen. <br />
+			Registeren is niet nodig, momenteel kan je inloggen aan de hand van je Google- of je Facebook account.
+			Wanneer je voor de eerste keer inlogt vragen wij volgende gegevens aan Google of Facebook:
+		</p>
+			<ul>
+				<li>voornaam</li>
+				<li>achternaam</li>
+				<li>openID</li>
+			</ul>
+		<p>
+			Dit heeft als doel:
+		</p> 
+		<ul>
+			<li>je te herkennen wanneer je inlogt</li>
+			<li>jezelf kenbaar te maken in de groepen waar je lid van bent</li>
+			<li>ons toe te laten om jouw pronostiek op te slaan</li>
+		</ul>
+		<p>
+			Je kan je naam zelf wijzigen op je <a href="/profile">profiel</a> pagina.
+			Deze worden opgeslagen in onze eigen database en worden <strong>niet</strong> gedeeld met andere partijen.
 			Wanneer je inlogt, ga je akkoord dat deze website de bovenstaande gegevens mag beheren in context
 			van deze pronostiek. 
-			Enkele dagen na laatste afleveringen worden alle gegevens definitief gewist.
-		</p>
-		<p class="align">
-			<br />
-			Indien je één van jouw <a href="https://www.gegevensbeschermingsautoriteit.be/burger/privacy/wat-zijn-mijn-rechten" 				target="_blank"
-				rel="noopener">GDPR</a> rechten willen uitoefenen, vul dan het <a href="/feedback">feedback</a> formulier in.
-			We doen ons best om de aanvraag binnen de 7 dagen te verwerken.
 		</p>
 	</section>
+
+
+	<section class="section" id="GDPR">
+		<h1 class="title"><span>GDPR</span></h1>
+		<p>
+			Indien je één van jouw <a href="https://www.gegevensbeschermingsautoriteit.be/burger/privacy/wat-zijn-mijn-rechten" 				target="_blank"
+			rel="noopener">GDPR</a> rechten willen uitoefenen, vul dan het <a href="/feedback">feedback</a> formulier in.
+			<br>
+			Daaronder valt ook het recht om vergeten te worden (right to be forgotten). Indien je daarvoor kiest, zullen we al jouw persoonlijke gegevens (inclusief pronostiek) verwijderen uit onze database.
+		</p>
+
+	</section>
+
 	<section class="section">
 		<h1 class="title"><span>Disclaimer</span></h1>
 		<p class="align-inital">
@@ -79,18 +101,14 @@
 	<section class="section">
 		<h1 class="title"><span>Contact</span></h1>
 		<p class="align-inital">
-			Je kan contact met mij opnemen via het "Wie is de mol" forum (<a
-				href="https://forum.wieisdemol.be/ucp.php?i=pm&mode=compose&u=4499"
-				target="_blank"
-				rel="noopener">klik</a
-			>).
+			Je kan contact met ons opnemen via het <a href="/feedback">feedback</a> formulier.
 		</p>
 	</section>
 	<section class="section">
 		<h1 class="title"><span>Extra informatie</span></h1>
 		<p>
 			<a
-				href="https://www.wieisdemol.be/"
+				href="https://www.wieisdemol.com/"
 				target="_blank"
 				rel="noreferer"
 				class="button is-link is-outlined">Fansite</a
@@ -122,5 +140,9 @@
 	}
 	a i {
 		padding-right: 5px;
+	}
+
+	p {
+		margin: 5px 0;
 	}
 </style>
