@@ -105,7 +105,7 @@
 					<h1 class="mol">
 						{voteopen ? item.name : item.name + (item.points ? ': ' + item.points : '')}
 					</h1>
-					{#if !item.isOut && voteopen}
+					{#if !item.isOut && voteopen && !finished}
 						<input type="number" min="0" bind:value={item.points} on:change={pointsChanged} />
 					{/if}
 				</div>
