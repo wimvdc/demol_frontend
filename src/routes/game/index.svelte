@@ -8,14 +8,12 @@
 	// let selected = { uuid: '' };
 	let startPoints = 0;
 	let availablePoints = startPoints;
-
+	let finished = false;
 
 	onMount(async () => {
-		const result = await Promise.allSettled([
-			getData('/v1/game/info'),
-			getData('/v1/candidates')
-		]);
+		const result = await Promise.allSettled([getData('/v1/game/info'), getData('/v1/candidates')]);
 		voteopen = result[0].value.voteopen;
+		finished = result[0].value.finished;
 		startPoints = result[0].value.spendable;
 		candidates = result[1].value;
 		//if (result[0].value.round > 0) selected = result[2].value ? result[2].value : selected;
@@ -24,17 +22,17 @@
 
 	async function save(myMol) {
 		try {
-				if (startPoints < pointCount()) result = 2;
-				else {
-					let guess = candidates.filter((mol) => Number(mol.points) != 0);
-					await postData('/v1/game/mol', guess);
-					result = 1;
-				}
-			} catch (error) {
-				result = 3;
-				console.error(error);
+			if (startPoints < pointCount()) result = 2;
+			else {
+				let guess = candidates.filter((mol) => Number(mol.points) != 0);
+				await postData('/v1/game/mol', guess);
+				result = 1;
 			}
-			candidates = await getData('/v1/candidates');
+		} catch (error) {
+			result = 3;
+			console.error(error);
+		}
+		candidates = await getData('/v1/candidates');
 		// End game logic
 		// result = 0;
 		// try {
@@ -53,7 +51,7 @@
 	}
 
 	function pointCount() {
-    	return candidates.reduce((acc, item) => acc + (item.points >= 0 ? item.points : 0), 0);
+		return candidates.reduce((acc, item) => acc + (item.points >= 0 ? item.points : 0), 0);
 	}
 	function pointsChanged(e) {
 		let currentPoints = candidates.reduce((acc, item) => acc + item.points, 0);
@@ -65,7 +63,7 @@
 	<title>Mollen</title>
 </svelte:head>
 <div class="has-text-centered">
-	{#if voteopen}
+	{#if voteopen && !finished}
 		<h4 class="title is-4">Beschikbare punten: {availablePoints}</h4>
 		<button class="button is-success" on:click={save}>Opslaan</button>
 	{:else}
@@ -81,8 +79,8 @@
 
 	{#if result == 2}
 		<div class="notification is-danger">
-		Oei, je hebt te veel punten uitgedeeld! 😰 <br />
-		Je kunt deze ronde maar <b>{startPoints}</b> punten verdelen.
+			Oei, je hebt te veel punten uitgedeeld! 😰 <br />
+			Je kunt deze ronde maar <b>{startPoints}</b> punten verdelen.
 		</div>
 	{/if}
 
@@ -98,16 +96,10 @@
 	{#each candidates as item}
 		<div class="column is-6-touch is-4-desktop has-text-centered">
 			<div class="candidate" class:out={item.isOut !== 0}>
-				{#if item.name.includes("?")}
-				<img
-					src="/kandidaten/unnamed.jpg"
-					alt="Foto van ?"
-				/>
+				{#if item.name.includes('?')}
+					<img src="/kandidaten/unnamed.jpg" alt="Foto van ?" />
 				{:else}
-				<img
-					src="/kandidaten/{item.name.toLowerCase()}.jpg"
-					alt="Foto van {item.name}"
-				/>
+					<img src="/kandidaten/{item.name.toLowerCase()}.jpg" alt="Foto van {item.name}" />
 				{/if}
 				<div class="name">
 					<h1 class="mol">
@@ -123,12 +115,10 @@
 </div>
 
 <style lang="scss">
-
-
 	.candidate {
 		&.out {
-				opacity: 0.2;
-			}
+			opacity: 0.2;
+		}
 
 		.name {
 			background-color: black;
@@ -170,16 +160,16 @@
 	}
 
 	@media only screen and (max-width: 600px) {
-    .name {
-      width: 100%;
-    }
-	img {
-		border: 0;
+		.name {
+			width: 100%;
+		}
+		img {
+			border: 0;
+		}
+		h1.mol {
+			font-size: 1.25rem;
+		}
 	}
-    h1.mol {
-      font-size: 1.25rem;
-    }
-  }
 
 	h1 {
 		margin-bottom: 5px;
