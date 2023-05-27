@@ -27,7 +27,6 @@
 	let showMobile = false;
 	const handleMobileIconClick = (event) => {
 		showMobile = !showMobile;
-		console.log('ok!');
 	};
 
 	const hide = () => {
@@ -37,7 +36,7 @@
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
 	<div class="navbar-brand">
-		<a class="navbar-item" href="/" id="appname" on:click={hide}> De Mol '22 </a>
+		<a class="navbar-item" href="/" id="appname" on:click={hide}> De Mol '23 </a>
 		<!-- svelte-ignore a11y-missing-attribute -->
 		<a
 			id="menu"
@@ -54,7 +53,7 @@
 	<div id="basicnavbar" class="navbar-menu" class:is-active={showMobile}>
 		<div class="navbar-start">
 			{#if isLoggedIn}
-				<!--a class="navbar-item" on:click={hide} href="/game"> Mollen </a-->
+				<a class="navbar-item" on:click={hide} href="/game"> Mollen </a>
 				<a class="navbar-item" on:click={hide} href="/group"> Groepen </a>
 				<!-- <div class="navbar-item has-dropdown is-hoverable"> -->
 				<!--svelte-ignore a11y-missing-attribute-->
@@ -75,7 +74,7 @@
 					<a id="me" class="navbar-link is-arrowless"> <i class="fa-solid fa-user" /> </a>
 					<div class="navbar-dropdown is-right">
 						<a class="navbar-item" on:click={hide} href="/profile"> Mijn Profiel </a>
-						<!--a class="navbar-item" href="/feedback"> Feedback </a-->
+						<a class="navbar-item" href="/feedback"> Feedback </a>
 						<a class="navbar-item" href="{baseUrl}/auth/v1/logout"> Uitloggen </a>
 					</div>
 				</div>

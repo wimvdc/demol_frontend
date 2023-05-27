@@ -1,0 +1,11 @@
+version: '3'
+services:
+  mol-frontend:
+    image: svelte-docker-node
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: mol-frontend
+    image: mol-frontend:dev
+    ports:
+      - 3002:3000

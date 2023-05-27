@@ -1,0 +1,1 @@
+git pull && docker-compose --env-file .env build mol-frontend && docker-compose up -d mol-frontend

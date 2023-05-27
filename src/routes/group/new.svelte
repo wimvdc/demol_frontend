@@ -1,5 +1,6 @@
 <script>
 	import { postData } from '$lib/utils';
+import { goto } from '$app/navigation';
 
 	let group = { name: '' };
 
@@ -18,7 +19,7 @@
 				result = 7600;
 			} else {
 				result = 2;
-				console.log(error);
+				console.error(error);
 			}
 		}
 	}
@@ -37,9 +38,9 @@
 					id="name"
 					class="input"
 					type="text"
-					placeholder="Mijn eigen groep"
+					placeholder="Mijn groepsnaam"
 					autocomplete="off"
-					minlength="4"
+					minlength="5"
 					maxlength="55"
 					bind:value={group.name}
 				/>
@@ -63,7 +64,7 @@
 				<button class="button is-success" on:click={insert} disabled={!formValid}>Opslaan</button>
 			</div>
 			<div class="control">
-				<button class="button">Annuleren</button>
+				<button class="button" on:click={() => {goto("/");}}>Annuleren</button>
 			</div>
 		</div>
 	{/if}

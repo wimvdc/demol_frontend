@@ -15,7 +15,7 @@
 				}, 2500);
 			} else result = -1;
 		} catch (error) {
-			console.log(error);
+			console.error(error);
 			result = -1;
 		}
 	});

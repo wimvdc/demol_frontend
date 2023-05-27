@@ -10,32 +10,38 @@
 	<section class="section">
 		<h1 class="title"><span>Hoe werkt het?</span></h1>
 		<ul>
-			<li>De eerste ronde start direct na aflevering 1.</li>
-			<li>Na iedere aflevering, vanaf 21u35, kan je stemmen.</li>
+			<li>De eerste ronde start direct na aflevering 1 en je krijgt 3 punten om te starten.</li>
+			<li>Na iedere aflevering, rond 21u40, kan je beginnen met stemmen.</li>
+			<li>
+				Je gebruikt jouw punten om in te zetten. Je kan 1 of meerdere punten inzetten op 0 of
+				meerdere kandidaten.
+			</li>
 			<li>Zit je verdachte na de aflevering nog in het spel? Dan score je punten!</li>
 			<li>
-				Punten worden op volgende manier berekend: 1 punten maal het aflevering nummer. <br />
-				Voorbeeld: 1 punt voor het eerste aflevering, 2 voor het tweede aflevering, etc. <br />Ligt
-				je verdachte er toch onverwachts uit? Geen probleem, dan krijg je geen punten deze ronde
-				maar kan je gewoon terug stemmen voor de volgende ronde!
+				Punten worden op volgende manier berekend: 1 punt maal het ronde nummer maal het aantal
+				ingezette punten.
 			</li>
-			<!--li>
-				Tijdens de laatste ronde moet je enkel jouw Mol kiezen. Na de bekendmaking van De Mol krijg
-				je 100 punten bij een juiste gok. Daarna gebeurd de finale scoreberekening op basis van
-				volgende logica: de punten die je doorheen alle voorgaande rondes hebt ingezet op De Mol
-				worden bij je aantal punten na ronde 6 opgeteld.
-			</li-->
 			<li>
-				Na de bekendmaking van de Mol zullen de definitieve scores worden berekend. Je krijgt voor
-				iedere keer dat je de mol juist hebt aangeduid extra punten. Had je in ronde 1 al de juiste
-				Mol te pakken? Dan verdien je 7 punten extra. Had je in ronde 2 pas de juiste Mol? Dan krijg
-				je 6 punten. En zo verder.
+				Voorbeeld: Aflevering 3 is net afgelopen. Je had 5 punten om in te zetten en hebt 4 punten
+				ingezet, telkens 1 punt op een andere kandidaat. <br />
+				Spijtig heeft 1 van je verdachte een rood scherm gekregen. Dan score 3 punten (van de overgebleven
+				3 verdachten) maal 2 (want je pronostiek is van ronde 2) dat zijn 6 punten. <br />
+				Je krijgt je originele 5 punten terug en jouw totaal is nu 11 punten. Deze kan je opnieuw inzetten
+				voor de volgende ronde.
+			</li>
+			<li>
+				Ligt je verdachte er toch uit? Geen probleem, dan krijg je geen punten deze ronde maar kan
+				je gewoon terug stemmen voor de volgende ronde.
+			</li>
+			<li>
+				Tijdens de laatste stemronde score je het aantal punten die je hebt ingezet op de Mol. Je
+				krijg ook nog eens alle punten die je had ingezet op de Mol in de voorbije rondes!
 			</li>
 		</ul>
 	</section>
 	<section class="section">
 		<h1 class="title"><span>Groepen</span></h1>
-		Je kan samen met je vrienden, familie, collega's ... spelen in 0 of meerdere groepen. Je kan zelf
+		Je kan samen met je vrienden, familie, collega's ... spelen in 1 of meerdere groepen. Je kan zelf
 		een groep aanmaken en je vrienden uitnodigen. Na iedere aflevering kan je zien hoeveel punten ze
 		gescoord hebben.
 		<br />De groepen zijn <strong>niet</strong> publiek, je moet dus zelf een groep maken of een
@@ -45,23 +51,48 @@
 		liever niet of gebruik je liever een alias dan kan je dit aanpassen in
 		<a href="/profile">je profiel</a>.
 	</section>
-	<section class="section">
-		<h1 class="title"><span>GDPR</span></h1>
+
+	<section class="section" id="privacy">
+		<h1 class="title"><span>Privacy Policy</span></h1>
 		<p class="align-inital">
 			Registeren is niet nodig, momenteel kan je inloggen aan de hand van je Google- of je Facebook
-			account. We vragen slechts een minimum aan gegevens aan de login-provider, namelijk: Google of
-			Facebook ID en je volledige naam. Deze gegevens worden <strong>niet</strong> gedeeld met derde
-			partijen. <br />
-			Wanneer je inlogt, ga je akkoord dat deze website de bovenstaande gegevens mag beheren in context
-			van deze pronostiek. <br />
-			Enkele dagen na laatste afleveringen worden alle gegevens definitief gewist.
+			account. Wanneer je voor de eerste keer inlogt vragen wij volgende gegevens aan Google of
+			Facebook:
 		</p>
-		<!--p class="align-inital">
-			Wij gebruiken Google Analytics om de gebruikerservaring te kunnen optimaliseren. Het gebruik
-			van een Ad Blocker zorgt ervoor dat deze data niet doorstroomt, het gebruik hiervan wordt
-			aangemoedigd indien je dit niet wenst.
-		</p-->
+		<ul>
+			<li>voornaam</li>
+			<li>achternaam</li>
+			<li>openID</li>
+		</ul>
+		<p>Dit heeft als doel:</p>
+		<ul>
+			<li>je te herkennen wanneer je inlogt</li>
+			<li>jezelf kenbaar te maken in de groepen waar je lid van bent</li>
+			<li>ons toe te laten om jouw pronostiek op te slaan</li>
+		</ul>
+		<p>
+			Je kan je naam zelf wijzigen op je <a href="/profile">profiel</a> pagina. Deze worden
+			opgeslagen in onze eigen database en worden <strong>niet</strong> gedeeld met andere partijen.
+			Wanneer je inlogt, ga je akkoord dat deze website de bovenstaande gegevens mag beheren in context
+			van deze pronostiek.
+		</p>
 	</section>
+
+	<section class="section" id="GDPR">
+		<h1 class="title"><span>GDPR</span></h1>
+		<p>
+			Indien je één van jouw <a
+				href="https://www.gegevensbeschermingsautoriteit.be/burger/privacy/wat-zijn-mijn-rechten"
+				target="_blank"
+				rel="noopener">GDPR</a
+			>
+			rechten willen uitoefenen, vul dan het <a href="/feedback">feedback</a> formulier in.
+			<br />
+			Daaronder valt ook het recht om vergeten te worden (right to be forgotten). Indien je daarvoor
+			kiest, zullen we al jouw persoonlijke gegevens (inclusief pronostiek) verwijderen uit onze database.
+		</p>
+	</section>
+
 	<section class="section">
 		<h1 class="title"><span>Disclaimer</span></h1>
 		<p class="align-inital">
@@ -72,20 +103,16 @@
 	<section class="section">
 		<h1 class="title"><span>Contact</span></h1>
 		<p class="align-inital">
-			Je kan contact me mij opnemen via het "Wie is de mol" forum (<a
-				href="https://forum.wieisdemol.be/ucp.php?i=pm&mode=compose&u=4499"
-				target="_blank"
-				rel="noopener">klik</a
-			>).
+			Je kan contact met ons opnemen via het <a href="/feedback">feedback</a> formulier.
 		</p>
 	</section>
 	<section class="section">
 		<h1 class="title"><span>Extra informatie</span></h1>
 		<p>
 			<a
-				href="https://www.wieisdemol.be/"
+				href="https://www.wieisdemol.com/"
 				target="_blank"
-				rel="noopener"
+				rel="noreferer"
 				class="button is-link is-outlined">Fansite</a
 			>
 			<a
@@ -115,5 +142,9 @@
 	}
 	a i {
 		padding-right: 5px;
+	}
+
+	p {
+		margin: 5px 0;
 	}
 </style>
