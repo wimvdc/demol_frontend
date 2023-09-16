@@ -12,8 +12,8 @@ ConfigurePassportOAuth2([
 		strategy: new GoogleStrategy(
 			{
 				callbackURL: 'http://localhost:8080/auth/v1/google/callback.json',
-				clientID: '255087509734-1pqv1r218e6rgcjehmo5pb6hikmrj857.apps.googleusercontent.com',
-				clientSecret: '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',
+				clientID: '_move_to_env_',
+				clientSecret: '_move_to_env_',
 				passReqToCallback: true
 			},
 			OAuthCreateCookie('molId')
